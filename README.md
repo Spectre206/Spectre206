@@ -67,7 +67,6 @@ A software project focused on practical tooling and system development.
 * Django
 * Django REST Framework
 * MySQL
-* PostgreSQL
 * REST APIs
 
 **AI & Machine Learning**
@@ -84,13 +83,11 @@ A software project focused on practical tooling and system development.
 * Prometheus
 * Grafana
 * Linux
-* Docker
 * Git/GitHub
 
 ## 📚 Currently Learning
 
 * Advanced backend architecture
-* PostgreSQL and database design
 * Distributed systems
 * Multi-agent architectures
 * AI-assisted software engineering
