@@ -33,12 +33,10 @@ A hybrid multi-agent framework for detecting, diagnosing, and responding to anom
 
 | Project | Description | Stack |
 |---|---|---|
-| **[Distributed Multi-Agent Self-Healing Data Pipelines](#)** | Research-oriented hybrid agentic framework for anomaly detection, diagnosis, decision-making, and self-healing in streaming pipelines. | `Python` `AI Agents` `Distributed Systems` `RabbitMQ` `Prometheus` `Grafana` |
-| **[DermaAI](#)** | Deep-learning skin disease classification exploring computer vision and transfer learning for medical imaging. | `Python` `TensorFlow` `Keras` `MobileNetV2` `EfficientNet` |
-| **[SmartForm](#)** | Backend-oriented intelligent document processing app combining OCR and local language models. | `Django` `Python` `HTMX` `Tesseract OCR` `Ollama` `Qwen` |
-| **[MemTrack Tool](#)** | Practical tooling and system development project. | `Python` `Backend Development` |
-
-*(Replace the `#` links above with your actual repo URLs.)*
+| **[Distributed Multi-Agent Self-Healing Data Pipelines](https://github.com/Spectre206/fyp-pipeline)** | Research-oriented hybrid agentic framework for anomaly detection, diagnosis, decision-making, and self-healing in streaming pipelines. | `Python` `AI Agents` `Distributed Systems` `RabbitMQ` `Prometheus` `Grafana` |
+| **[DermaAI](https://github.com/Spectre206/DermaAI)** | Deep-learning skin disease classification exploring computer vision and transfer learning for medical imaging. | `Python` `TensorFlow` `Keras` `MobileNetV2` `EfficientNet` |
+| **[SmartForm](https://github.com/Spectre206/smartform)** | Backend-oriented intelligent document processing app combining OCR and local language models. | `Django` `Python` `HTMX` `Tesseract OCR` `Ollama` `Qwen` |
+| **[MemTrack Tool](https://github.com/Spectre206/memtrack-tool)** | Practical tooling and system development project. | `Python` `Backend Development` |
 
 ---
 
