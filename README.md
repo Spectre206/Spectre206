@@ -21,22 +21,70 @@ Building intelligent, reliable, and scalable software systems — with a focus o
 **Distributed Multi-Agent Coordination for Self-Healing Data Pipelines**
 *A Human-in-the-Loop Approach Based on Commodity Hardware — Research / Final Year Project*
 
-A hybrid multi-agent framework for detecting, diagnosing, and responding to anomalies in streaming data pipelines — exploring how agentic AI can improve reliability and self-healing in distributed systems without expensive infrastructure.
-
-- **Detection & Diagnosis:** real-time anomaly detection, AI-assisted triage
-- **Recovery & Decision-Making:** multi-agent coordination, automated remediation, human-in-the-loop approval
-- **Infrastructure & Observability:** streaming data processing, Prometheus & Grafana, resource-efficient deployment
+A hybrid multi-agent framework for detecting, diagnosing, and responding to anomalies in streaming data pipelines — exploring how agentic AI can improve reliability and self-healing in distributed systems without expensive infrastructure. Full architecture breakdown below in **Featured Projects** ⬇️
 
 ---
 
 ### 🔭 Featured Projects
 
-| Project | Description | Stack |
-|---|---|---|
-| **[Distributed Multi-Agent Self-Healing Data Pipelines](https://github.com/Spectre206/fyp-pipeline)** | Research-oriented hybrid agentic framework for anomaly detection, diagnosis, decision-making, and self-healing in streaming pipelines. | `Python` `AI Agents` `Distributed Systems` `RabbitMQ` `Prometheus` `Grafana` |
-| **[DermaAI](https://github.com/Spectre206/DermaAI)** | Deep-learning skin disease classification exploring computer vision and transfer learning for medical imaging. | `Python` `TensorFlow` `Keras` `MobileNetV2` `EfficientNet` |
-| **[SmartForm](https://github.com/Spectre206/smartform)** | Backend-oriented intelligent document processing app combining OCR and local language models. | `Django` `Python` `HTMX` `Tesseract OCR` `Ollama` `Qwen` |
-| **[MemTrack Tool](https://github.com/Spectre206/memtrack-tool)** | Practical tooling and system development project. | `Python` `Backend Development` |
+#### 🧠 [Distributed Multi-Agent Self-Healing Data Pipelines](https://github.com/Spectre206/fyp-pipeline)
+*Final Year Project — hybrid multi-agent framework for streaming pipeline reliability on a 3-node commodity cluster*
+
+A three-layer system where detection, agentic reasoning, and human-in-the-loop remediation work together to keep streaming pipelines self-healing:
+- **Layer 1 — Detection:** five parallel anomaly detectors (Isolation Forest, Z-Score, Moving Average, Random Forest, PSI) fused through a correlation engine
+- **Layer 2 — Reasoning:** Triage, Strategy, Policy & Learning agents coordinating over a RAG-backed knowledge base
+- **Layer 3 — Action:** automated remediation with a human-in-the-loop dashboard, monitored via Prometheus & Grafana
+
+🎯 Target MTTA (Mean Time to Acknowledge) ≤ 33s &nbsp;·&nbsp; 📝 Manuscript in preparation — targeting *MDPI Big Data and Cognitive Computing*
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
+![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![AI Agents](https://img.shields.io/badge/-AI%20Agents-4B32C3?style=flat-square)
+![Distributed Systems](https://img.shields.io/badge/-Distributed%20Systems-2E86AB?style=flat-square)
+
+[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/fyp-pipeline)
+
+#### 🩺 [DermaAI](https://github.com/Spectre206/DermaAI)
+*Computer vision for medical image classification*
+
+Deep-learning skin lesion classification exploring transfer learning across MobileNetV2 and EfficientNet backbones, with Grad-CAM visual explainability for model interpretability in a medical-imaging context.
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![MobileNetV2](https://img.shields.io/badge/-MobileNetV2-6A5ACD?style=flat-square)
+![EfficientNet](https://img.shields.io/badge/-EfficientNet-8A2BE2?style=flat-square)
+
+[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/DermaAI)
+
+#### 📄 [SmartForm](https://github.com/Spectre206/smartform)
+*Intelligent document processing, backend-first*
+
+Django application pairing OCR extraction with locally-hosted LLMs to parse and structure data from documents, with no cloud inference dependency.
+
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![HTMX](https://img.shields.io/badge/-HTMX-3D72D7?style=flat-square&logo=htmx&logoColor=white)
+![Tesseract OCR](https://img.shields.io/badge/-Tesseract%20OCR-4285F4?style=flat-square)
+![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square)
+![Qwen](https://img.shields.io/badge/-Qwen-6236FF?style=flat-square)
+
+[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/smartform)
+
+#### 🧰 [MemTrack Tool](https://github.com/Spectre206/memtrack-tool)
+*Runtime memory leak detector for C on Linux*
+
+A lightweight memory profiler that intercepts `malloc()`/`free()` calls to track heap allocations in real time, generating detailed, color-coded leak reports at program termination:
+- **Linked Mode (primary):** compile-time macro wrapping injects file, line, and function metadata directly into tracking nodes for precise internal debugging
+- **LD_PRELOAD Mode:** runtime function interposition via `dlsym(RTLD_NEXT)` for transparent tracking of external binaries with no source access required
+
+![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Systems Programming](https://img.shields.io/badge/-Systems%20Programming-2E86AB?style=flat-square)
+
+[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/memtrack-tool)
 
 ---
 
