@@ -19,7 +19,7 @@ Building intelligent, reliable, and scalable software systems — with a focus o
 ### 🚀 Currently Working On
 
 **Distributed Multi-Agent Coordination for Self-Healing Data Pipelines**
-*A Human-in-the-Loop Approach Based on Commodity Hardware — Research / Final Year Project*
+*A Human-in-the-Loop Approach Based on Commodity Hardware — Final Year Project, In Progress*
 
 A hybrid multi-agent framework for detecting, diagnosing, and responding to anomalies in streaming data pipelines — exploring how agentic AI can improve reliability and self-healing in distributed systems without expensive infrastructure. Full architecture breakdown below in **Featured Projects** ⬇️
 
@@ -27,7 +27,7 @@ A hybrid multi-agent framework for detecting, diagnosing, and responding to anom
 
 ### 🔭 Featured Projects
 
-#### 🧠 [Distributed Multi-Agent Self-Healing Data Pipelines](https://github.com/Spectre206/fyp-pipeline)
+#### 🧠 [Distributed Multi-Agent Self-Healing Data Pipelines](https://github.com/Spectre206/fyp-pipeline) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)
 *Final Year Project — hybrid multi-agent framework for streaming pipeline reliability on a 3-node commodity cluster*
 
 A three-layer system where detection, agentic reasoning, and human-in-the-loop remediation work together to keep streaming pipelines self-healing:
@@ -46,45 +46,60 @@ A three-layer system where detection, agentic reasoning, and human-in-the-loop r
 
 [![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/fyp-pipeline)
 
-#### 🩺 [DermaAI](https://github.com/Spectre206/DermaAI)
-*Computer vision for medical image classification*
+#### 🎓 [CampusCore](https://github.com/Spectre206/campuscore)
+*AI-powered education management platform*
 
-Deep-learning skin lesion classification exploring transfer learning across MobileNetV2 and EfficientNet backbones, with Grad-CAM visual explainability for model interpretability in a medical-imaging context.
+A full-featured education management system bringing together academic structure, attendance, assessments, role-based dashboards, and an AI-powered quiz generator into a single Django-based platform — built to run comfortably in local development and scale cleanly with Docker:
+- **Academic operations:** Departments, Programs, Courses, Sections, and Enrollments, with attendance workflows for both teachers and students
+- **AI Quiz Generator:** Groq-powered quiz generation with a mock provider fallback for offline development
+- **REST API v1:** fully documented with OpenAPI, Swagger UI, and ReDoc
+- **Async notifications:** in-app and email notifications delivered via Celery
+- **Docker-first:** complete Docker & Docker Compose setup for reproducible environments
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
-![MobileNetV2](https://img.shields.io/badge/-MobileNetV2-6A5ACD?style=flat-square)
-![EfficientNet](https://img.shields.io/badge/-EfficientNet-8A2BE2?style=flat-square)
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Celery](https://img.shields.io/badge/-Celery-37814A?style=flat-square&logo=celery&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/DermaAI)
+[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/campuscore)
+
+#### ✈️ [ResearchPilot](https://github.com/Spectre206/ResearchPilot)
+*Evidence-grounded AI research assistant*
+
+An enterprise-grade research assistant for analyzing academic papers and technical literature, built around a hybrid retrieval engine and a deterministic multi-agent verification pipeline:
+- **Hybrid Retrieval:** Reciprocal Rank Fusion combining dense vector search (ChromaDB) with sparse keyword scoring (BM25Okapi)
+- **4-stage verification pipeline:** Analyst → Evidence → Critic → Report agents working to eliminate hallucinated claims
+- **Native tool-calling agent:** autonomous Groq function-calling loop with dynamic model auto-discovery and fallbacks
+- **Observability:** SQLite-backed execution tracing with a dedicated `/traces` API endpoint
+- **Table & font-aware ingestion:** PyMuPDF-powered layout parsing with automatic Markdown table extraction
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/-ChromaDB-orange?style=flat-square)
+![Groq](https://img.shields.io/badge/-Groq-purple?style=flat-square)
+
+[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/ResearchPilot)
 
 #### 📄 [SmartForm](https://github.com/Spectre206/smartform)
-*Intelligent document processing, backend-first*
+*AI-powered form automation & validation, backend-first*
 
-Django application pairing OCR extraction with locally-hosted LLMs to parse and structure data from documents, with no cloud inference dependency.
+A form automation system that extracts data from uploaded document images via OCR, auto-fills structured forms, and pairs it with a locally-hosted LLM assistant that validates entries and answers questions — no cloud inference dependency:
+- **OCR extraction:** Tesseract-based pipeline pulling name, ID number, address, and other fields from CNIC images
+- **AI assistant:** local Ollama LLM (qwen3:1.7b) that explains fields, checks for missing data, and highlights errors
+- **Fully asynchronous:** OCR and validation run as Celery + Redis background tasks with live HTMX status polling
+- **PDF generation:** produces a ready-to-submit, filled application via WeasyPrint
 
 ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![HTMX](https://img.shields.io/badge/-HTMX-3D72D7?style=flat-square&logo=htmx&logoColor=white)
 ![Tesseract OCR](https://img.shields.io/badge/-Tesseract%20OCR-4285F4?style=flat-square)
 ![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square)
-![Qwen](https://img.shields.io/badge/-Qwen-6236FF?style=flat-square)
+![Celery](https://img.shields.io/badge/-Celery-37814A?style=flat-square&logo=celery&logoColor=white)
 
 [![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/smartform)
-
-#### 🧰 [MemTrack Tool](https://github.com/Spectre206/memtrack-tool)
-*Runtime memory leak detector for C on Linux*
-
-A lightweight memory profiler that intercepts `malloc()`/`free()` calls to track heap allocations in real time, generating detailed, color-coded leak reports at program termination:
-- **Linked Mode (primary):** compile-time macro wrapping injects file, line, and function metadata directly into tracking nodes for precise internal debugging
-- **LD_PRELOAD Mode:** runtime function interposition via `dlsym(RTLD_NEXT)` for transparent tracking of external binaries with no source access required
-
-![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Systems Programming](https://img.shields.io/badge/-Systems%20Programming-2E86AB?style=flat-square)
-
-[![View Repository](https://img.shields.io/badge/View-Repository-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Spectre206/memtrack-tool)
 
 ---
 
@@ -99,6 +114,7 @@ A lightweight memory profiler that intercepts `malloc()`/`free()` calls to track
 **Backend & Data**
 ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![DRF](https://img.shields.io/badge/-Django%20REST%20Framework-092E20?style=flat-square&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![REST APIs](https://img.shields.io/badge/-REST%20APIs-005571?style=flat-square&logo=fastapi&logoColor=white)
 
@@ -108,11 +124,15 @@ A lightweight memory profiler that intercepts `malloc()`/`free()` calls to track
 ![Computer Vision](https://img.shields.io/badge/-Computer%20Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![LLMs](https://img.shields.io/badge/-LLMs-412991?style=flat-square&logo=openai&logoColor=white)
 ![Agentic Systems](https://img.shields.io/badge/-Agentic%20Systems-4B32C3?style=flat-square)
+![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/-ChromaDB-orange?style=flat-square)
 
 **Distributed & Infrastructure**
 ![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
+![Celery](https://img.shields.io/badge/-Celery-37814A?style=flat-square&logo=celery&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
