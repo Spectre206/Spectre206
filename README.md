@@ -119,9 +119,6 @@ A form automation system that extracts data from uploaded document images via OC
 ![REST APIs](https://img.shields.io/badge/-REST%20APIs-005571?style=flat-square&logo=fastapi&logoColor=white)
 
 **AI & Machine Learning**
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
-![Computer Vision](https://img.shields.io/badge/-Computer%20Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![LLMs](https://img.shields.io/badge/-LLMs-412991?style=flat-square&logo=openai&logoColor=white)
 ![Agentic Systems](https://img.shields.io/badge/-Agentic%20Systems-4B32C3?style=flat-square)
 ![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
