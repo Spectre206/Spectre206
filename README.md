@@ -28,14 +28,14 @@ A hybrid multi-agent framework for detecting, diagnosing, and responding to anom
 ### 🔭 Featured Projects
 
 #### 🧠 [Distributed Multi-Agent Self-Healing Data Pipelines](https://github.com/Spectre206/fyp-pipeline) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)
-*Final Year Project — hybrid multi-agent framework for streaming pipeline reliability on a 3-node commodity cluster*
+*Final Year Project, UET Peshawar (Nowshera Campus) — hybrid multi-agent framework for streaming pipeline reliability on a 3-node commodity cluster, built with a teammate under faculty supervision*
 
-A three-layer system where detection, agentic reasoning, and human-in-the-loop remediation work together to keep streaming pipelines self-healing:
-- **Layer 1 — Detection:** five parallel anomaly detectors (Isolation Forest, Z-Score, Moving Average, Random Forest, PSI) fused through a correlation engine
-- **Layer 2 — Reasoning:** Triage, Strategy, Policy & Learning agents coordinating over a RAG-backed knowledge base
-- **Layer 3 — Action:** automated remediation with a human-in-the-loop dashboard, monitored via Prometheus & Grafana
+A hybrid multi-agent framework that detects anomalies in a distributed streaming pipeline and decides whether to remediate them automatically or escalate to a human, running entirely on three commodity machines with no cloud infrastructure or GPU dependency:
+- **Layer 1 — Real-Time Data Plane:** five independent detectors (CPU spikes, error-rate surges, throughput drops, auth floods, schema drift) feeding a Fusion Engine that correlates signals into a single incident and filters duplicates
+- **Layer 2 — AI Control Plane:** a Triage agent classifies incidents using RAG over a ChromaDB knowledge base, a Strategy agent reasons about remediation via a local quantized LLM (qwen3:1.7b through Ollama), a Policy agent routes the decision to auto-execution or human review, and a Learning agent updates thresholds from outcomes
+- **Layer 3 — HITL & Observability:** a Django human-in-the-loop dashboard for manual approvals, an auto-execution engine, and Prometheus + Grafana monitoring across all three nodes
 
-🎯 Target MTTA (Mean Time to Acknowledge) ≤ 33s &nbsp;·&nbsp; 📝 Manuscript in preparation — targeting *MDPI Big Data and Cognitive Computing*
+📊 Evaluated against a 1,950-event benchmark dataset, targeting control-plane latency under 30s &nbsp;·&nbsp; 📝 Manuscript in preparation — targeting *MDPI Big Data and Cognitive Computing*
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
